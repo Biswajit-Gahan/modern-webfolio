@@ -1,5 +1,78 @@
+:root {
+    /*
+        WEBSITE COLORS CONFIGURATION
+    */
+    --light-background: rgba(255, 255, 255, 1);
+    --dark-background: rgba(15, 15, 15, 1);
+    --primary-color: rgba(245, 15, 70, 1);
+    --primary-light: rgba(236, 240, 246, 1);
+    --primary-dark: rgba(15, 15, 15, 1);
+    --primary-gray: rgba(145, 145, 145, 1);
+    --secondary-gray: rgba(72, 72, 72, 1);
+    --primary-gray-transparent: rgba(92, 92, 92, 0.3);
+    --dark-overlay: rgba(15, 15, 15, 0.65);
+
+    /*
+        WEBSITE FONTS CONFIGURATION
+    */
+    --primary-font: 'Monda Variable';
+    --secondary-font: 'Mohave Variable';
+    --default-font-size: 14px;
+    --default-font-weight: 400;
+
+    /*
+        WEBSITE OTHER CONFIGURATION
+    */
+    --default-navbar-height: 7.625rem;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+/*
+    DARK MODE STYLES
+*/
+.dark-mode {
+    background-color: var(--dark-background);
+    color: var(--primary-light);
+    border-color: var(--primary-light);
+}
+
+/*
+    LIGHT MODE STYLES
+*/
+.light-mode {
+    background-color: var(--light-background);
+    color: var(--primary-light);
+    border-color: var(--primary-dark);
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--dark-background);
+    color: var(--primary-light);
+    font-family: var(--primary-font), sans-serif;
+    font-weight: var(--default-font-weight);
+    font-size: var(--default-font-size);
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
 }

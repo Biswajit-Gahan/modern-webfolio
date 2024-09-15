@@ -1,4 +1,6 @@
 import {createRoot} from "react-dom/client";
+import '@fontsource-variable/mohave';
+import '@fontsource-variable/monda';
 import "./globals.css"
 import App from "./app";
 

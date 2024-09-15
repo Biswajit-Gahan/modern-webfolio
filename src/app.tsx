@@ -1,7 +1,5 @@
-import {Fragment} from "react";
+import LandingPage from "./pages/landing-page/landing-page";
 
 export default function App() {
-    return <Fragment>
-        This website is in under development. Please comeback soon.
-    </Fragment>
+    return <LandingPage />
 }
