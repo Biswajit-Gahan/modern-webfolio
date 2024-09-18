@@ -87,14 +87,14 @@
 }
 
 .hero_tag_left {
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 1px;
     color: var(--secondary-gray);
     font-weight: 700;
 }
 
 .hero_tag_right {
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 1px;
     color: var(--secondary-gray);
     font-weight: 700;

@@ -1,5 +1,7 @@
 import styles from "./hero-section.module.css";
 import userImage from "../../assets/image/png/user-image-1.png";
+import FlippyText from "../animations/flippy-text/flippy-text";
+import {motion} from "framer-motion";
 
 function LocationComponent({title, description}: { title: string, description: string }) {
     return <div className={styles.bottom_location_container}>
@@ -34,8 +36,12 @@ export default function HeroSection() {
             <div className={styles.hero_top_container}>
                 <span className={styles.hero_top_label}>HI THERE</span>
                 <div className={styles.hero_tag_container}>
-                    <span className={styles.hero_tag_left}>SHAIK MAHABOOB SUBHANI</span>
-                    <span className={styles.hero_tag_right}>IT MANAGER, FINTECH</span>
+                    <motion.span initial={"initial"} whileHover={"animate"} className={styles.hero_tag_left}>
+                        <FlippyText text={"SHAIK MAHABOOB SUBHANI"} direction={"up"} />
+                    </motion.span>
+                    <motion.span initial={"initial"} whileHover={"animate"} className={styles.hero_tag_right}>
+                        <FlippyText text={"IT MANAGER, FINTECH"} direction={"up"} />
+                    </motion.span>
                 </div>
             </div>
             <span className={styles.hero_bottom_label}>I AM <span className={styles.hero_bottom_user_name}>SHAIK</span></span>

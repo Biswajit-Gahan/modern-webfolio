@@ -1,0 +1,23 @@
+.container {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    display: block;
+}
+
+.text_wrapper {
+    display: inline-block;
+}
+
+.text_wrapper_copy {
+    position: absolute;
+    inset: 0;
+}
+
+.character {
+    display: inline-block;
+}
+
+.empty_character {
+    margin: 0 0.25rem;
+}

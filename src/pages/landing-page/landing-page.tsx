@@ -5,8 +5,8 @@ import HeroSection from "../../components/hero-section/hero-section";
 
 export default function LandingPage() {
     return <Fragment>
-        <Navbar />
-        <HeroSection />
+        <Navbar/>
+        <HeroSection/>
         <div style={{height: "500vh"}}></div>
     </Fragment>
 }
