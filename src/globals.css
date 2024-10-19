@@ -11,19 +11,63 @@
     --secondary-gray: rgba(72, 72, 72, 1);
     --primary-gray-transparent: rgba(92, 92, 92, 0.3);
     --dark-overlay: rgba(15, 15, 15, 0.65);
+    --semi-dark-background: rgba(23, 23, 23, 1);
+    --custom-color-one: rgba(241, 55, 99, 1);
+    --custom-color-two: rgb(161, 108, 48);
+    --custom-color-three:  rgba(41, 116, 229, 1);
+    --custom-color-four: rgba(57, 200, 157, 1);
+    --custom-color-five: rgba(255, 151, 55, 1);
+    --custom-color-six: rgba(174, 21, 57, 1);
+    --custom-color-seven: rgba(36, 36, 36, 1);
+    --custom-color-eight: rgba(235, 163, 82, 1);
+    --custom-color-ten: rgba(8, 124, 89, 1);
 
     /*
         WEBSITE FONTS CONFIGURATION
     */
     --primary-font: 'Monda Variable';
     --secondary-font: 'Mohave Variable';
+    --tertiary-font: 'Poppins';
+    --quaternary-font: 'Montagu Slab Variable';
     --default-font-size: 14px;
     --default-font-weight: 400;
 
     /*
         WEBSITE OTHER CONFIGURATION
     */
-    --default-navbar-height: 7.625rem;
+
+    /*
+        BREAK POINTS
+        ****************
+
+        MOBILE
+        ---------------
+        360 - 572
+
+        TABLET
+        ---------------
+        573 - 1023
+
+        DESKTOP
+        ---------------
+        1024 - 1279
+        1280 - 1365
+        1366 - 1439
+        1440 - 1679
+        1680 - 1919
+        1920 - 2559
+        2560 - 3840
+    */
+    --default-navbar-height: 3rem;
+    --default-padding-mobile: 1rem;
+    --default-padding-tablet: 2rem;
+    --default-padding-desktop-1024: 2rem;
+    --default-padding-desktop-1280: 3rem;
+    --default-padding-desktop-1366: 3rem;
+    --default-padding-desktop-1440: 6rem;
+    --default-padding-desktop-1680: 8rem;
+    --default-padding-desktop-1920: 13rem;
+    --default-padding-desktop-2560: 25rem;
 }
 
 *, *::before, *::after {
@@ -46,7 +90,7 @@
 */
 .light-mode {
     background-color: var(--light-background);
-    color: var(--primary-light);
+    color: var(--primary-dark);
     border-color: var(--primary-dark);
 }
 
@@ -62,11 +106,11 @@ html, body {
     -ms-user-select: none;
     user-select: none;
     -ms-overflow-style: none;
-    scrollbar-width: none;
+    /*scrollbar-width: none;*/
 }
 
 ::-webkit-scrollbar {
-    display: none;
+    /*display: none;*/
 }
 
 a {
@@ -75,4 +119,12 @@ a {
     font-size: inherit;
     font-family: inherit;
     font-weight: inherit;
+}
+
+button {
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+    border: none;
 }

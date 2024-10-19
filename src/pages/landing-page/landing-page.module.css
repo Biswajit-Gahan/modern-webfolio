@@ -1,0 +1,86 @@
+.container {
+    overflow-x: clip;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 360 - 572
+*/
+
+@media only screen and (min-width: 360px) and (max-width: 572px) {
+
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 573 - 1023
+*/
+
+@media only screen and (min-width: 572px) and (max-width: 1023px) {
+
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 1024 - 1279
+*/
+
+@media only screen and (min-width: 1023px) and (max-width: 1279px) {
+
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 1280 - 1365
+*/
+
+@media only screen and (min-width: 1279px) and (max-width: 1365px) {
+
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 1366 - 1439
+*/
+
+@media only screen and (min-width: 1365px) and (max-width: 1439px) {
+
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 1440 - 1679
+*/
+
+@media only screen and (min-width: 1439px) and (max-width: 1679px) {
+
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 1680 - 1919
+*/
+
+@media only screen and (min-width: 1679px) and (max-width: 1919px) {
+
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 1920 - 2559
+*/
+
+@media only screen and (min-width: 1919px) and (max-width: 2559px) {
+
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 2560 - REST
+*/
+
+@media only screen and (min-width: 2559px) {
+
+}

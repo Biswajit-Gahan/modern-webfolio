@@ -1,0 +1,444 @@
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 1366 - 1439
+*/
+
+.container {
+    width: 100vw;
+    height: 550px;
+    overflow-x: clip;
+    padding: 3rem var(--default-padding-desktop-1366);
+    font-family: var(--tertiary-font), "sans-serif";
+    background-color: var(--semi-dark-background);
+    position: relative;
+}
+
+.user_image {
+    position: absolute;
+    width: auto;
+    height: 31rem;
+    bottom: 0;
+    right: 10%;
+}
+
+.heading_container {
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hand_shake_icon {
+    width: 8rem;
+    height: auto;
+}
+
+.heading_label {
+    font-size: 65px;
+    font-weight: 500;
+}
+
+.contact_container {
+    position: absolute;
+    bottom: 6rem;
+    left: 14.5rem;
+}
+
+.contact_label {
+    font-size: 20px;
+}
+
+.contact_tag {
+    font-size: 11px;
+    color: var(--secondary-gray);
+}
+
+.link_container {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.whatsapp_link {
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--custom-color-ten);
+}
+
+.email_link {
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid var(--primary-light);
+}
+
+.arrow_up_icon {}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 360 - 572
+*/
+
+@media only screen and (min-width: 360px) and (max-width: 572px) {
+    .container {
+        width: 100%;
+        height: fit-content;
+        overflow: clip;
+        padding: 2rem var(--default-padding-mobile);
+    }
+
+    .user_image {
+        display: none;
+    }
+
+    .heading_container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hand_shake_icon {
+        width: 5rem;
+        height: auto;
+    }
+
+    .heading_label {
+        font-size: 25px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .contact_container {
+        margin-top: 2rem;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact_label {
+        font-size: 15px;
+    }
+
+    .contact_tag {
+        font-size: 10px;
+    }
+
+    .link_container {
+        margin-top: 1rem;
+        font-size: 12px;
+    }
+
+    .whatsapp_link {
+        padding: 0.8rem 1rem;
+    }
+
+    .email_link {
+        padding: 0.8rem 1rem;
+    }
+
+    .arrow_up_icon {
+        width: 8px;
+        height: auto;
+    }
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 573 - 1023
+*/
+
+@media only screen and (min-width: 572px) and (max-width: 1023px) {
+    .container {
+        padding: 2rem var(--default-padding-tablet);
+        height: 430px;
+    }
+
+    .user_image {
+        height: 25rem;
+        bottom: 0;
+        right: 3%;
+    }
+
+    .heading_container {
+        gap: 2rem;
+    }
+
+    .hand_shake_icon {
+        width: 5rem;
+    }
+
+    .heading_label {
+        font-size: 45px;
+    }
+
+    .contact_container {
+        bottom: 3rem;
+        left: 9.5rem;
+    }
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 1024 - 1279
+*/
+
+@media only screen and (min-width: 1023px) and (max-width: 1279px) {
+    .container {
+        padding: 2rem var(--default-padding-desktop-1024);
+        height: 460px;
+    }
+
+    .user_image {
+        height: 28rem;
+        bottom: 0;
+        right: 6%;
+    }
+
+    .hand_shake_icon {
+        width: 6rem;
+    }
+
+    .heading_label {
+        font-size: 50px;
+    }
+
+    .contact_container {
+        bottom: 6rem;
+        left: 11.5rem;
+    }
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 1280 - 1365
+*/
+
+@media only screen and (min-width: 1279px) and (max-width: 1365px) {
+    .container {
+        padding: 2rem var(--default-padding-desktop-1366);
+        height: 500px;
+    }
+
+    .user_image {
+        height: 30rem;
+        bottom: 0;
+        right: 15%;
+    }
+
+    .hand_shake_icon {
+        width: 6rem;
+    }
+
+    .heading_label {
+        font-size: 60px;
+    }
+
+    .contact_container {
+        bottom: 6rem;
+        left: 11.5rem;
+    }
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 1440 - 1679
+*/
+
+@media only screen and (min-width: 1439px) and (max-width: 1679px) {
+    .container {
+        padding: 3rem var(--default-padding-desktop-1440);
+        height: 555px;
+    }
+
+    .user_image {
+        height: 34rem;
+        bottom: 0;
+        right: 12%;
+    }
+
+    .hand_shake_icon {
+        width: 10rem;
+    }
+
+    .heading_label {
+        font-size: 70px;
+    }
+
+    .contact_container {
+        bottom: 7rem;
+        left: 19.5rem;
+    }
+
+    .contact_label {
+        font-size: 20px;
+    }
+
+    .contact_tag {
+        font-size: 12px;
+    }
+
+    .link_container {
+        margin-top: 1rem;
+        font-size: 14px;
+    }
+
+    .arrow_up_icon {
+        width: 9px;
+        height: auto;
+    }
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 1680 - 1919
+*/
+
+@media only screen and (min-width: 1679px) and (max-width: 1919px) {
+    .container {
+        padding: 3rem var(--default-padding-desktop-1680);
+        height: 560px;
+    }
+
+    .user_image {
+        height: 34rem;
+        right: 15%;
+    }
+
+    .hand_shake_icon {
+        width: 12rem;
+    }
+
+    .heading_label {
+        font-size: 75px;
+    }
+
+    .contact_container {
+        bottom: 7rem;
+        left: 23.5rem;
+    }
+
+    .contact_label {
+        font-size: 22px;
+    }
+
+    .contact_tag {
+        font-size: 14px;
+    }
+
+    .link_container {
+        margin-top: 1rem;
+        font-size: 16px;
+    }
+
+    .arrow_up_icon {
+        width: 10px;
+        height: auto;
+    }
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 1920 - 2559
+*/
+
+@media only screen and (min-width: 1919px) and (max-width: 2559px) {
+    .container {
+        padding: 3rem var(--default-padding-desktop-1920);
+        height: 580px;
+    }
+
+    .user_image {
+        height: 35rem;
+        right: 18%;
+    }
+
+    .hand_shake_icon {
+        width: 14rem;
+    }
+
+    .heading_label {
+        font-size: 85px;
+    }
+
+    .contact_container {
+        bottom: 7rem;
+        left: 29.5rem;
+    }
+
+    .contact_label {
+        font-size: 24px;
+    }
+
+    .contact_tag {
+        font-size: 16px;
+    }
+
+    .link_container {
+        margin-top: 1rem;
+        font-size: 18px;
+    }
+
+    .arrow_up_icon {
+        width: 11px;
+        height: auto;
+    }
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 2560 - REST
+*/
+
+@media only screen and (min-width: 2559px) {
+    .container {
+        padding: 3rem var(--default-padding-desktop-2560);
+        height: 650px;
+    }
+
+    .user_image {
+        height: 39rem;
+        right: 25%;
+    }
+
+    .hand_shake_icon {
+        width: 16rem;
+    }
+
+    .heading_label {
+        font-size: 95px;
+    }
+
+    .contact_container {
+        bottom: 7rem;
+        left: 41.5rem;
+    }
+
+    .contact_label {
+        font-size: 24px;
+    }
+
+    .contact_tag {
+        font-size: 16px;
+    }
+
+    .link_container {
+        margin-top: 1rem;
+        font-size: 18px;
+    }
+
+    .arrow_up_icon {
+        width: 11px;
+        height: auto;
+    }
+}

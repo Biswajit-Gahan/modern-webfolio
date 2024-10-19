@@ -1,0 +1,730 @@
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 1366 - 1439
+*/
+
+.container {
+    width: 100%;
+    padding: 0 var(--default-padding-desktop-1366) 3rem;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    font-family: var(--tertiary-font), "sans-serif";
+}
+
+.heading {
+    font-size: 50px;
+}
+
+.accordion_container {
+    height: 100%;
+    max-height: 500px;
+    overflow: clip;
+    background-color: var(--semi-dark-background);
+    display: flex;
+}
+
+.accordion_header_container {
+    flex: 1;
+    min-width: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+    border: 1px solid var(--custom-color-seven);
+}
+
+.accordion_header_image {
+    width: 3rem;
+    height: auto;
+    cursor: pointer;
+}
+
+.accordion_header_label {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 20px;
+}
+
+.accordion_header_active {
+    .accordion_header_image {
+        width: 3rem;
+        height: auto;
+        transform: rotateZ(180deg);
+    }
+}
+
+.accordion_content_container {
+    width: 0;
+    overflow: clip;
+}
+
+.accordion_content_container_active {
+    flex: 4;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--custom-color-seven);
+}
+
+.accordion_content_heading_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion_content_heading {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.company_web_link_container {
+    margin-top: 0.1rem;
+}
+
+.globe_icon {
+    width: 0.9rem;
+    height: auto;
+    vertical-align: middle;
+}
+
+.company_logo {
+    width: 7rem;
+    height: auto;
+}
+
+.company_web_link {
+    margin-left: 0.1rem;
+    color: var(--secondary-gray);
+}
+
+.company_web_link:hover {
+    text-decoration: underline;
+}
+
+.info_container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.position_tag {
+    width: fit-content;
+    font-size: 10px;
+    padding: 0.2rem 0.5rem;
+    background-color: var(--custom-color-one);
+}
+
+.position_label {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0.45rem 0;
+}
+
+.duration_container {
+    font-size: 12px;
+    color: var(--custom-color-eight);
+}
+
+.duration_icon {
+    width: 0.85rem;
+    height: auto;
+    vertical-align: middle;
+}
+
+.hr {
+    margin: 1rem 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--primary-gray-transparent);
+}
+
+.info_description {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: var(--primary-gray);
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 360 - 572
+*/
+
+@media only screen and (min-width: 360px) and (max-width: 572px) {
+    .container {
+        padding: 0 var(--default-padding-mobile) 3rem;
+        gap: 2rem;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .accordion_container {
+        height: fit-content;
+        max-height: max-content;
+        flex-direction: column;
+    }
+
+    .accordion_header_container {
+        min-width: fit-content;
+        flex-direction: row-reverse;
+        padding: 1rem 2rem;
+    }
+
+    .accordion_header_image {
+        width: 2.5rem;
+    }
+
+    .accordion_header_label {
+        writing-mode: initial;
+        transform: rotate(0deg);
+        font-size: 14px;
+    }
+
+    .accordion_header_active {
+        .accordion_header_image {
+            width: 2.5rem;
+        }
+    }
+
+    .accordion_content_container {
+        width: 100%;
+        height: 0;
+    }
+
+    .accordion_content_container_active {
+        flex: 1;
+        height: 100%;
+        padding: 2rem;
+        gap: 50px;
+    }
+
+    .accordion_content_heading {
+        font-size: 23px;
+        font-weight: 600;
+    }
+
+    .company_web_link_container {
+        margin-top: 0.5rem;
+    }
+
+    .globe_icon {
+        width: 0.7rem;
+    }
+
+    .company_web_link {
+        font-size: 12px;
+    }
+
+    .position_label {
+        font-size: 16px;
+    }
+
+    .duration_container {
+        font-size: 10px;
+    }
+
+    .duration_icon {
+        width: 0.6rem;
+    }
+
+    .info_description {
+        font-size: 11px;
+        letter-spacing: 0;
+    }
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 573 - 1023
+*/
+
+@media only screen and (min-width: 572px) and (max-width: 1023px) {
+    .container {
+        padding: 0 var(--default-padding-tablet) 3rem;
+        gap: 2rem;
+    }
+
+    .heading {
+        font-size: 35px;
+    }
+
+    .accordion_container {
+        height: fit-content;
+        max-height: max-content;
+        flex-direction: column;
+    }
+
+    .accordion_header_container {
+        min-width: fit-content;
+        flex-direction: row-reverse;
+        padding: 1rem 2rem;
+    }
+
+    .accordion_header_image {
+        width: 2.8rem;
+    }
+
+    .accordion_header_label {
+        writing-mode: initial;
+        transform: rotate(0deg);
+        font-size: 15px;
+    }
+
+    .accordion_header_active {
+        .accordion_header_image {
+            width: 2.8rem;
+        }
+    }
+
+    .accordion_content_container {
+        width: 100%;
+        height: 0;
+    }
+
+    .accordion_content_container_active {
+        flex: 1;
+        height: 100%;
+        padding: 2rem;
+        gap: 50px;
+    }
+
+    .accordion_content_heading {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .company_web_link_container {
+        margin-top: 0.5rem;
+    }
+
+    .globe_icon {
+        width: 0.8rem;
+    }
+
+    .company_web_link {
+        font-size: 13px;
+    }
+
+    .position_label {
+        font-size: 18px;
+    }
+
+    .duration_container {
+        font-size: 12px;
+    }
+
+    .duration_icon {
+        width: 0.7rem;
+    }
+
+    .info_description {
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 1024 - 1279
+*/
+
+@media only screen and (min-width: 1023px) and (max-width: 1279px) {
+    .container {
+        padding: 0 var(--default-padding-desktop-1024) 3rem;
+    }
+
+    .heading {
+        font-size: 40px;
+    }
+
+    .accordion_container {
+        max-height: 450px;
+    }
+
+    .accordion_header_image {
+        width: 2.8rem;
+    }
+
+    .accordion_header_label {
+        font-size: 16px;
+    }
+
+    .accordion_header_active {
+        .accordion_header_image {
+            width: 2.8rem;
+        }
+    }
+
+    .accordion_content_heading {
+        font-size: 27px;
+    }
+
+    .globe_icon {
+        width: 0.8rem;
+    }
+
+    .company_web_link {
+        font-size: 12px;
+    }
+
+    .position_label {
+        font-size: 18px;
+    }
+
+    .duration_container {
+        font-size: 11px;
+    }
+
+    .duration_icon {
+        width: 0.75rem;
+    }
+
+    .info_description {
+        font-size: 11px;
+    }
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 1280 - 1365
+*/
+
+@media only screen and (min-width: 1279px) and (max-width: 1365px) {
+    .container {
+        padding: 0 var(--default-padding-desktop-1280) 3rem;
+    }
+
+    .heading {
+        font-size: 45px;
+    }
+
+    .accordion_container {
+        max-height: 480px;
+    }
+
+    .accordion_header_image {
+        width: 2.9rem;
+    }
+
+    .accordion_header_label {
+        font-size: 18px;
+    }
+
+    .accordion_header_active {
+        .accordion_header_image {
+            width: 2.9rem;
+        }
+    }
+
+    .accordion_content_heading {
+        font-size: 29px;
+    }
+
+    .globe_icon {
+        width: 0.8rem;
+    }
+
+    .company_web_link {
+        font-size: 12px;
+    }
+
+    .position_label {
+        font-size: 19px;
+    }
+
+    .duration_container {
+        font-size: 11px;
+    }
+
+    .duration_icon {
+        width: 0.75rem;
+    }
+
+    .info_description {
+        font-size: 11px;
+    }
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 1440 - 1679
+*/
+
+@media only screen and (min-width: 1439px) and (max-width: 1679px) {
+    .container {
+        padding: 0 var(--default-padding-desktop-1440) 3rem;
+    }
+
+    .heading {
+        font-size: 55px;
+    }
+
+    .accordion_container {
+        max-height: 520px;
+    }
+
+    .accordion_header_image {
+        width: 3.1rem;
+    }
+
+    .accordion_header_label {
+        font-size: 22px;
+    }
+
+    .accordion_header_active {
+        .accordion_header_image {
+            width: 3.1rem;
+        }
+    }
+
+    .accordion_content_heading {
+        font-size: 33px;
+    }
+
+    .globe_icon {
+        width: 1rem;
+    }
+
+    .company_logo {
+        width: 8rem;
+    }
+
+    .company_web_link {
+        font-size: 14px;
+    }
+
+    .position_tag {
+        font-size: 12px;
+    }
+
+    .position_label {
+        font-size: 22px;
+    }
+
+    .duration_container {
+        font-size: 14px;
+    }
+
+    .duration_icon {
+        width: 0.95rem;
+    }
+
+    .info_description {
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 1680 - 1919
+*/
+
+@media only screen and (min-width: 1679px) and (max-width: 1919px) {
+    .container {
+        padding: 0 var(--default-padding-desktop-1680) 3rem;
+    }
+
+    .heading {
+        font-size: 60px;
+    }
+
+    .accordion_container {
+        max-height: 550px;
+    }
+
+    .accordion_header_image {
+        width: 3.3rem;
+    }
+
+    .accordion_header_label {
+        font-size: 24px;
+    }
+
+    .accordion_header_active {
+        .accordion_header_image {
+            width: 3.3rem;
+        }
+    }
+
+    .accordion_content_heading {
+        font-size: 37px;
+    }
+
+    .globe_icon {
+        width: 1.2rem;
+    }
+
+    .company_logo {
+        width: 9rem;
+    }
+
+    .company_web_link {
+        font-size: 16px;
+    }
+
+    .position_tag {
+        font-size: 13px;
+    }
+
+    .position_label {
+        font-size: 24px;
+    }
+
+    .duration_container {
+        font-size: 16px;
+    }
+
+    .duration_icon {
+        width: 1.1rem;
+    }
+
+    .info_description {
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 1920 - 2559
+*/
+
+@media only screen and (min-width: 1919px) and (max-width: 2559px) {
+    .container {
+        padding: 0 var(--default-padding-desktop-1920) 3rem;
+    }
+
+    .heading {
+        font-size: 65px;
+    }
+
+    .accordion_container {
+        max-height: 580px;
+    }
+
+    .accordion_header_image {
+        width: 3.5rem;
+    }
+
+    .accordion_header_label {
+        font-size: 26px;
+    }
+
+    .accordion_header_active {
+        .accordion_header_image {
+            width: 3.5rem;
+        }
+    }
+
+    .accordion_content_heading {
+        font-size: 40px;
+    }
+
+    .globe_icon {
+        width: 1.3rem;
+    }
+
+    .company_logo {
+        width: 10rem;
+    }
+
+    .company_web_link {
+        font-size: 18px;
+    }
+
+    .position_tag {
+        font-size: 14px;
+    }
+
+    .position_label {
+        font-size: 26px;
+    }
+
+    .duration_container {
+        font-size: 17px;
+    }
+
+    .duration_icon {
+        width: 1.2rem;
+    }
+
+    .info_description {
+        font-size: 18px;
+        letter-spacing: 0;
+    }
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 2560 - REST
+*/
+
+@media only screen and (min-width: 2559px) {
+    .container {
+        padding: 0 var(--default-padding-desktop-2560) 3rem;
+    }
+
+    .heading {
+        font-size: 70px;
+    }
+
+    .accordion_container {
+        max-height: 620px;
+    }
+
+    .accordion_header_image {
+        width: 3.7rem;
+    }
+
+    .accordion_header_label {
+        font-size: 28px;
+    }
+
+    .accordion_header_active {
+        .accordion_header_image {
+            width: 3.7rem;
+        }
+    }
+
+    .accordion_content_heading {
+        font-size: 45px;
+    }
+
+    .globe_icon {
+        width: 1.5rem;
+    }
+
+    .company_logo {
+        width: 12rem;
+    }
+
+    .company_web_link {
+        font-size: 20px;
+    }
+
+    .position_tag {
+        font-size: 16px;
+    }
+
+    .position_label {
+        font-size: 30px;
+    }
+
+    .duration_container {
+        font-size: 20px;
+    }
+
+    .duration_icon {
+        width: 1.5rem;
+    }
+
+    .info_description {
+        font-size: 20px;
+        letter-spacing: 0;
+    }
+}

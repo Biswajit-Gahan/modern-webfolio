@@ -35,7 +35,7 @@ export default function Navbar() {
                     <div className={styles.list_top_right}/>
                 </div>
                 {/*<span className={styles.list_bottom}>Work</span>*/}
-                <FlippyText text={"Work"} direction={"up"} />
+                <FlippyText text={"About"} direction={"up"} />
             </motion.a>
 
             <motion.a initial={"initial"} whileHover={"animate"} href={"#"} className={styles.list_container}>
@@ -44,7 +44,7 @@ export default function Navbar() {
                     <div className={styles.list_top_right}/>
                 </div>
                 {/*<span className={styles.list_bottom}>About</span>*/}
-                <FlippyText text={"About"} direction={"up"} />
+                <FlippyText text={"Experience"} direction={"up"} />
             </motion.a>
 
             <motion.a initial={"initial"} whileHover={"animate"} href={"#"} className={styles.list_container}>

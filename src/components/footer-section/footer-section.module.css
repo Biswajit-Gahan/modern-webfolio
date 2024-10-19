@@ -1,0 +1,231 @@
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 1366 - 1439
+*/
+
+.container {
+    width: 100%;
+    overflow: clip;
+}
+
+.thank_you_wrapper {
+    margin: 2rem 0 0;
+}
+
+.thank_you_label {
+    font-size: 200px;
+    line-height: 195px;
+    text-wrap: nowrap;
+    font-style: italic;
+    font-weight: 600;
+    color: var(--semi-dark-background);
+    font-family: var(--secondary-font), "sans-serif";
+}
+
+.footer_container {
+    width: 100%;
+    background-color: var(--semi-dark-background);
+    padding: 1rem var(--default-padding-desktop-1366);
+    font-size: 11px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--secondary-gray);
+}
+
+.footer_left_label {}
+
+.footer_right_label {}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 360 - 572
+*/
+
+@media only screen and (min-width: 360px) and (max-width: 572px) {
+    .thank_you_wrapper {
+        margin: 0.9rem 0 0;
+    }
+
+    .thank_you_label {
+        font-size: 80px;
+        line-height: 75px;
+    }
+
+    .footer_container {
+        font-size: 10px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 2rem var(--default-padding-mobile);
+    }
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 573 - 1023
+*/
+
+@media only screen and (min-width: 572px) and (max-width: 1023px) {
+    .thank_you_wrapper {
+        margin: 1rem 0 0;
+    }
+
+    .thank_you_label {
+        font-size: 120px;
+        line-height: 120px;
+    }
+
+    .footer_container {
+        font-size: 10px;
+        padding: 2rem var(--default-padding-tablet);
+    }
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 1024 - 1279
+*/
+
+@media only screen and (min-width: 1023px) and (max-width: 1279px) {
+    .thank_you_wrapper {
+        margin: 2rem 0 0;
+    }
+
+    .thank_you_label {
+        font-size: 150px;
+        line-height: 150px;
+    }
+
+    .footer_container {
+        font-size: 11px;
+        padding: 1.5rem var(--default-padding-desktop-1024);
+    }
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 1280 - 1365
+*/
+
+@media only screen and (min-width: 1279px) and (max-width: 1365px) {
+    .thank_you_wrapper {
+        margin: 2rem 0 0;
+    }
+
+    .thank_you_label {
+        font-size: 180px;
+        line-height: 180px;
+    }
+
+    .footer_container {
+        font-size: 11px;
+        padding: 1.5rem var(--default-padding-desktop-1280);
+    }
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 1366 - 1439
+*/
+
+/*@media only screen and (min-width: 1365px) and (max-width: 1439px) {*/
+/*    .thank_you_wrapper {*/
+/*        margin: 2rem 0 0;*/
+/*    }*/
+
+/*    .thank_you_label {*/
+/*        font-size: 210px;*/
+/*        line-height: 210px;*/
+/*    }*/
+
+/*    .footer_container {*/
+/*        font-size: 12px;*/
+/*        padding: 1.5rem var(--default-padding-desktop-1366);*/
+/*    }*/
+/*}*/
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 1440 - 1679
+*/
+
+@media only screen and (min-width: 1439px) and (max-width: 1679px) {
+    .thank_you_wrapper {
+        margin: 2rem 0 0;
+    }
+
+    .thank_you_label {
+        font-size: 215px;
+        line-height: 215px;
+    }
+
+    .footer_container {
+        padding: 1.5rem var(--default-padding-desktop-1440);
+        font-size: 12px;
+    }
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 1680 - 1919
+*/
+
+@media only screen and (min-width: 1679px) and (max-width: 1919px) {
+    .thank_you_wrapper {
+        margin: 2.5rem 0 0;
+    }
+
+    .thank_you_label {
+        font-size: 220px;
+        line-height: 220px;
+    }
+
+    .footer_container {
+        padding: 2rem var(--default-padding-desktop-1680);
+        font-size: 13px;
+    }
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 1920 - 2559
+*/
+
+@media only screen and (min-width: 1919px) and (max-width: 2559px) {
+    .thank_you_wrapper {
+        margin: 2.5rem 0 0;
+    }
+
+    .thank_you_label {
+        font-size: 225px;
+        line-height: 225px;
+    }
+
+    .footer_container {
+        padding: 2rem var(--default-padding-desktop-1920);
+        font-size: 14px;
+    }
+}
+
+/*
+    RESPONSIVE DESIGN FOR
+    SCREEN SIZE 2560 - REST
+*/
+
+@media only screen and (min-width: 2559px) {
+    .thank_you_wrapper {
+        margin: 3rem 0 0;
+    }
+
+    .thank_you_label {
+        font-size: 240px;
+        line-height: 240px;
+    }
+
+    .footer_container {
+        padding: 2rem var(--default-padding-desktop-2560);
+        font-size: 16px;
+    }
+}
